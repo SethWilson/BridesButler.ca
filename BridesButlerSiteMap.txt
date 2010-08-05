@@ -1,0 +1,15 @@
+Brides Butler Page Hierarchy
+
+index
+	-> about
+	-> weddings
+		-> consultation
+		-> day of coordination
+		-> full wedding planning
+			-> Friends of Brides Butler
+		-> why hire a planner?
+		
+	-> gallery
+	-> blog
+	-> events
+	

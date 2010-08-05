@@ -1,0 +1,217 @@
+
+
+body {
+    color:black;
+    font-family:Verdana,Arial,Helvetica,sans-serif;
+    font-size:0.8em;
+    font-weight:normal;
+    height:100%;
+    min-width:800px;
+    background: #fedfee;
+}
+
+#bordered {
+    border:10px solid black;
+    margin-top: 15px;
+}
+
+#mainpanel {
+    background-color:white;
+    border:10px solid black;
+    margin-left:auto;
+    margin-right:auto;
+    overflow:hidden;
+    width:780px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+#headerpanel {
+    height: 130px;
+    background-color:white;
+    background-image: url(images/header.png);
+    background-position:right top;
+    background-repeat:no-repeat;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    
+}
+
+#contactinfopanel {
+    height: 27px;
+    padding-left: 40px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+#pagetitle {
+    height: 60px;
+    background-color: black;
+    
+}
+#pagecontent {
+    min-height: 400px;
+    
+}
+#navmenu {
+    height : 37px;
+    width: 100%;
+    position: relative;
+}
+
+#navmenu ul {
+   margin-left: 0;
+   padding-left: 100px;
+
+   /* whitespace: nowrap; sometimes this is suggested to prevent list wrap*/
+   }
+#navmenu li  {
+    float: left;
+    display: block;
+    height: 25px;
+    padding-left: 15px;
+    background: url('images/nav-bullet.png') no-repeat 8px 5px;
+    font-size:1.0em;
+   }
+
+
+#navmenu a  {
+  padding: 0.25em 0.5em;
+  text-decoration:none;
+  color:black;
+  }
+
+
+#navmenu a:hover {
+   color:#e83889;
+   }
+
+p {
+    
+    padding:0px;
+    
+}
+
+#photo-left {
+	float: left;
+	width: 150px;   
+	margin: 20px;
+
+}
+
+#content-right { 
+	margin-top: 0px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	float: left;
+	width: 470px;
+	height: 1% /* Holly hack for Peekaboo Bug */
+}
+
+#photo-right {
+	float: left;
+	width: 235px;   
+	margin: 15px;
+
+}
+
+#content-left { 
+	margin: 20px;
+	float: left;
+	width: 470px;
+	height: 1% /* Holly hack for Peekaboo Bug */
+}
+#content-span { 
+	margin: 35px;
+	margin-top: 0px;
+	float: left;
+	width: 90%;
+	height: 1% /* Holly hack for Peekaboo Bug */
+}
+
+.img_center {
+    text-align:center;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding:0px;
+}
+
+.home_bordered {
+    border-style: solid; border-color: black; border-width: 3px 68px;
+}
+
+#friendslist ul {
+   margin-left: 0;
+   padding-left: 100px;
+
+   /* whitespace: nowrap; sometimes this is suggested to prevent list wrap*/
+   }
+#friendslist li  {
+    height: 25px;
+    text-decoration:none;
+    padding-left: 15px;
+    background: url('images/nav-bullet.png') no-repeat 8px 5px;
+    font-size:1.0em;
+    display: block;
+   }
+
+
+#friendslist a  {
+  padding: 0.25em 0.5em;
+  text-decoration:none;
+  color:black;
+  }
+
+#submenu_container {
+    position: relative;
+    
+}
+
+  #submenu {
+      height : 37px;
+      position: absolute; right: 30px; top: -50px;
+      
+  }
+
+  #submenu ul {
+     margin-left: 0;
+     padding-right: 15px;
+     
+     /* whitespace: nowrap; sometimes this is suggested to prevent list wrap*/
+     }
+  #submenu li  {
+      float: left;
+      display: block;
+      height: 25px;
+      padding-left: 15px;
+      background: url('images/nav-bullet-black.png') no-repeat 8px 5px;
+      font-size:1.0em;
+     }
+
+
+  #submenu a  {
+    padding: 0.25em 0.5em;
+    text-decoration:none;
+    color:white;
+    }
+
+
+  #submenu a:hover {
+     color:#e83889;
+     }
+     
+ #submenu a.current {
+    color:#e83889;
+    }
+    
+#buttons {
+    border: 0px none ; position: absolute; right: 35px; top: -10px; text-decoration: none;
+}
+
+.nodeco{
+    text-decoration: none;
+    border: 0px;
+}
