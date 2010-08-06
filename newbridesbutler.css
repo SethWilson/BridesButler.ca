@@ -6,7 +6,8 @@ body {
     font-weight:normal;
     height:100%;
     min-width:900px;
-    background: #FB5E53 url(http://themes.googleusercontent.com/image?id=0BwVBOzw_-hbMNjdhZTQ5ZjMtOTUzOS00ZDRjLTk4YWEtYWFjMDUxYmFmODFj) repeat scroll center top;
+    background: #fedfee; 
+    /* url(http://themes.googleusercontent.com/image?id=0BwVBOzw_-hbMNjdhZTQ5ZjMtOTUzOS00ZDRjLTk4YWEtYWFjMDUxYmFmODFj) repeat scroll center top; */
 }
 
 #main-container
@@ -23,7 +24,7 @@ body {
 {
    
     width: 900px;
-    height: 130px;
+    height: 131px;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -37,7 +38,7 @@ body {
 {
     
     width: 259px;
-    height: 466px;
+    height: 468px;
     position: absolute;
     left: 0px;
     top: 137px;
@@ -47,10 +48,10 @@ body {
 #content
 {
     
-    width: 626px;
+    width: 625px;
     height: 279px;
     position: absolute;
-    left: 264px;
+    left: 265px;
     top: 137px;
     background-color:white;
     font-size: 0.8em;
@@ -61,7 +62,7 @@ body {
 {
    
     width: 361px;
-    height: 180px;
+    height: 183px;
     position: absolute;
     left: 539px;
     top: 422px;
@@ -71,10 +72,10 @@ body {
 #bottom-mid-photo
 {
    
-    width: 269px;
-    height: 180px;
+    width: 268px;
+    height: 183px;
     position: absolute;
-    left: 264px;
+    left: 265px;
     top: 422px;
     background-color:white;
 }
@@ -85,6 +86,7 @@ body {
     margin: auto;
     text-align: center;
     font-size: 0.9em;
+    padding-top: 5px;
 }
 #footer a {
     color:black;
@@ -94,7 +96,7 @@ body {
 #navmenu {
     height : 37px;
     position: absolute;
-    left: 305px;
+    right: 30px;
     top: 85px;
 }
 
@@ -128,4 +130,12 @@ body {
  h4 {
      margin-top: 8px;
      margin-bottom: 8px;
+ }
+ #buttons {
+     border: 0px none ; position: absolute; right: 15px; top: 15px; text-decoration: none;
+ }
+
+ .nodeco{
+     text-decoration: none;
+     border: 0px;
  }
