@@ -13,18 +13,19 @@ body {
 #main-container
 {
  
-    height: 605px;
+    height: 795px;
     width: 900px;
     margin: auto;
     position: relative;
     background: #CCCCCC;
+	border: 6px solid #CCCCCC;
 }
 
 #header
 {
    
     width: 900px;
-    height: 131px;
+    height: 137px;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -38,45 +39,73 @@ body {
 {
     
     width: 259px;
-    height: 468px;
+    height: 462px;
     position: absolute;
     left: 0px;
-    top: 137px;
+    top: 143px;
     background-color:white;
 }
 
 #content
 {
     
-    width: 625px;
-    height: 279px;
+    width: 615px;
+    height: 462px;
     position: absolute;
     left: 265px;
-    top: 137px;
+    top: 143px;
     background-color:white;
-    font-size: 0.8em;
+    font-size: 0.95em; 
     padding-left: 10px;
+	padding-right: 10px;
+	line-height: 1.4;
+}
+
+#index-content
+{
+    
+    width: 880px;
+    height: 652px;
+    position: absolute;
+    left: 0px;
+    top: 143px;
+    background-color:white;
+    font-size: 0.95em; 
+    padding-left: 10px;
+	padding-right: 10px;
+	line-height: 1.4;
+}
+
+#bottom-left-photo
+{
+   
+    width: 296px;
+    height: 183px;
+    position: absolute;
+    left: 0px;
+    top: 611px;
+    background-color:white;
 }
 
 #bottom-right-photo
 {
    
-    width: 361px;
+    width: 296px;
     height: 183px;
     position: absolute;
-    left: 539px;
-    top: 422px;
+    left: 604px;
+    top: 611px;
     background-color:white;
 }
 
 #bottom-mid-photo
 {
    
-    width: 268px;
+    width: 296px;
     height: 183px;
     position: absolute;
-    left: 265px;
-    top: 422px;
+    left: 302px;
+    top: 611px;
     background-color:white;
 }
 
@@ -86,7 +115,7 @@ body {
     margin: auto;
     text-align: center;
     font-size: 0.9em;
-    padding-top: 5px;
+    padding-top: 10px;
 }
 #footer a {
     color:black;
@@ -112,7 +141,7 @@ body {
     height: 25px;
     padding-left: 15px;
     background: url('images/nav-bullet.png') no-repeat 8px 5px;
-    font-size:1.0em;
+    font-size: 1.0em;
    }
 
 
@@ -139,3 +168,113 @@ body {
      text-decoration: none;
      border: 0px;
  }
+
+#submenu {
+
+}
+
+#submenu ul {
+   margin-left: 0;
+
+   /* whitespace: nowrap; sometimes this is suggested to prevent list wrap*/
+   }
+#submenu li  {
+    float: left;
+    display: block;
+    height: 25px;
+    padding-left: 15px;
+    background: url('images/nav-bullet.png') no-repeat 8px 5px;
+    font-size:1.0em;
+   }
+
+
+#submenu a  {
+  padding: 0.25em 0.5em;
+  text-decoration:none;
+  color:black;
+  }
+
+
+#submenu a:hover {
+   color:#e83889;
+   }
+
+#friends {
+   line-height: 1.8;
+}
+#friends a  {
+  padding: 0.25em 0.5em;
+  text-decoration:none;
+  color:black;
+  }
+
+.friends_non_a  {
+  padding: 0.25em 0.5em;
+  text-decoration:none;
+  color:black;
+  }
+
+#friends a:hover {
+   color:#e83889;
+   }
+
+.img_center {
+    text-align:center;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-top:10px;
+
+}
+
+.bulleted {
+    float: left;
+    display: block;
+    height: 15px;
+    padding-left: 5px;
+    background: url('images/nav-bullet.png') no-repeat 0px 5px;
+    font-size: 1.0em;
+   }
+
+.bulleted_heading
+{
+	padding: 0.75em;
+}
+
+.first_header
+{
+	padding-top:15px;
+}
+.pt-10
+{
+	padding-top:10px;
+}
+.pt-15
+{
+	padding-top:15px;
+}
+.pt-25
+{
+	padding-top:25px;
+}
+.pt-35
+{
+	padding-top:35px;
+}
+.pt-45
+{
+	padding-top:45px;
+}
+
+.selected
+{
+	font-weight:bold;
+}
+
+#slideshow { left: 100px;top:30px;}
+#nav { width: 270px; margin: 0px; padding-left: 25px;}
+#nav li { width: 80px; float: left; margin: 10px; list-style: none }
+#nav a { width: 80px; padding: 6px; display: block; border: 1px solid #ccc; }
+#nav a.activeSlide { background: #88f }
+#nav a:focus { outline: none; }
+#nav img { border: none; display: block }
+
