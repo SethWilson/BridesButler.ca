@@ -5,7 +5,7 @@ require 'rubygems'
 require 'ruby-growl'
 require 'net/sftp'
 require 'net/ftp'
-
+require 'haml'
 
 
 g = Growl.new "localhost", "ruby-growl", ["ruby-growl Notification"]
@@ -20,7 +20,7 @@ REMOTE_SERVER='diznee.ipower.com'
 REMOTE_LOGIN='sethmaster'
 REMOTE_PASSWORD='dudeWTF!12345'
 
-html_files = FileList['index.html', 'friends.html', 'about.html', 'weddings.html', 'events.html', 'dayof.html', 'consultation.html', 'planning.html']
+html_files = FileList['friends.html', 'about.html', 'weddings.html', 'events.html', 'dayof.html', 'consultation.html', 'planning.html', 'why.html']
 css_files = FileList['*.css']
 image_files = FileList['images/*.jpg', 'images/*.png', 'images/*.gif']
 static_files = FileList['*.xml', '*.txt']
@@ -37,6 +37,7 @@ end
 def send_files(file_list)
   file_list.each do |target|
     send_file(target)
+    outputs "Transfered #{target}"
   end
   
 end
@@ -72,10 +73,16 @@ end
 
 
 html_files.each do |target|
+  template = File.read('bb-test.haml')
   file target => 'bridesbutler_data.yaml' do
+    website_data = load_template_data(target)
     outputs "Built #{target} in each"
     File.open(target, "w+") do |f|
-      SimpleTemplate.new(load_template_data(target),f)
+      haml_engine = Haml::Engine.new(template).to_html(Object.new, { :title => website_data["title"], 
+                                                                     :content => website_data["pagecontent"], 
+                                                                     :pagename => website_data["pagename"], 
+                                                                     :image_prefix => website_data["image_prefix"]}) 
+      f.write haml_engine
     end
   end
   desc "Build all pages for the Brides Butler website locally"
@@ -129,6 +136,10 @@ task :deploy_js do
     send_files(image_files)
 end
 
+desc "Build a sitemap based on files provided"
+task :build_sitemap do
+  
+end
 
 #desc "Builds the HTML file, using SimpleTemplate."
 #file ENV["FILENAME"] => 'bridesbutler_data.yaml' do

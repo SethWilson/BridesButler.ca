@@ -1,0 +1,311 @@
+
+body {
+    color:black;
+    font-family:Verdana,Arial,Helvetica,sans-serif;
+    font-size:0.8em;
+    font-weight:normal;
+    height:100%;
+    min-width:900px;
+    background: #fedfee; 
+    /* url(http://themes.googleusercontent.com/image?id=0BwVBOzw_-hbMNjdhZTQ5ZjMtOTUzOS00ZDRjLTk4YWEtYWFjMDUxYmFmODFj) repeat scroll center top; */
+}
+
+#main-container
+{
+ 
+    height: 795px;
+    width: 900px;
+    margin: auto;
+    position: relative;
+    background: #CCCCCC;
+	border: 6px solid #CCCCCC;
+}
+
+#header
+{
+   
+    width: 900px;
+    height: 137px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color:white;
+/*
+    background-image: url(images/header.png);
+    background-position:left top;
+    background-repeat:no-repeat; */
+}
+
+#brides-butler-logo {
+    background-image: url(images/header.png);
+    display:block;
+    height:131px;
+    text-indent:-9999px;
+    width:403px;
+}
+
+#left-photo
+{
+    
+    width: 259px;
+    height: 462px;
+    position: absolute;
+    left: 0px;
+    top: 143px;
+    background-color:white;
+}
+
+#content
+{
+    
+    width: 615px;
+    height: 462px;
+    position: absolute;
+    left: 265px;
+    top: 143px;
+    background-color:white;
+    font-size: 0.95em; 
+    padding-left: 10px;
+	padding-right: 10px;
+	line-height: 1.4;
+}
+
+#index-content
+{
+    
+    width: 880px;
+    height: 652px;
+    position: absolute;
+    left: 0px;
+    top: 143px;
+    background-color:white;
+    font-size: 0.95em; 
+    padding-left: 10px;
+	padding-right: 10px;
+	line-height: 1.4;
+}
+
+#bottom-left-photo
+{
+   
+    width: 296px;
+    height: 183px;
+    position: absolute;
+    left: 0px;
+    top: 611px;
+    background-color:white;
+}
+
+#bottom-right-photo
+{
+   
+    width: 296px;
+    height: 183px;
+    position: absolute;
+    left: 604px;
+    top: 611px;
+    background-color:white;
+}
+
+#bottom-mid-photo
+{
+   
+    width: 296px;
+    height: 183px;
+    position: absolute;
+    left: 302px;
+    top: 611px;
+    background-color:white;
+}
+
+#footer {
+    width: 900px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    font-size: 0.9em;
+    padding-top: 10px;
+}
+#footer a {
+    color:black;
+    text-decoration:none;
+}
+
+#navmenu {
+    height : 37px;
+    position: absolute;
+    right: 30px;
+    top: 85px;
+}
+
+#navmenu ul {
+   margin-left: 0;
+   padding-left: 100px;
+
+   /* whitespace: nowrap; sometimes this is suggested to prevent list wrap*/
+   }
+#navmenu li  {
+    float: left;
+    display: block;
+    height: 25px;
+    padding-left: 15px;
+    background: url('images/nav-bullet.png') no-repeat 8px 5px;
+    font-size: 1.0em;
+   }
+
+
+#navmenu a  {
+  padding: 0.25em 0.5em;
+  text-decoration:none;
+  color:black;
+  }
+
+
+#navmenu a:hover {
+   color:#e83889;
+   }
+   
+ h4 {
+     margin-top: 8px;
+     margin-bottom: 8px;
+ }
+ #buttons {
+     border: 0px none ; position: absolute; right: 15px; top: 15px; text-decoration: none;
+ }
+
+ .nodeco{
+     text-decoration: none;
+     border: 0px;
+	color: black;
+ }
+.nodeco a:visited {
+     text-decoration: none;
+     border: 0px;
+	color: black;
+ }
+
+#submenu {
+
+}
+
+#submenu ul {
+   margin-left: 0;
+
+   /* whitespace: nowrap; sometimes this is suggested to prevent list wrap*/
+   }
+#submenu li  {
+    float: left;
+    display: block;
+    height: 25px;
+    padding-left: 12px;
+    background: url('images/nav-bullet.png') no-repeat 8px 5px;
+    font-size:0.98em;
+   }
+
+
+#submenu a  {
+  padding: 0.25em 0.5em;
+  text-decoration:none;
+  color:black;
+  }
+
+
+#submenu a:hover {
+   color:#e83889;
+   }
+
+#friends {
+   line-height: 1.8;
+}
+#friends a  {
+  padding: 0.25em 0.5em;
+  text-decoration:none;
+  color:black;
+  }
+
+.friends_non_a  {
+  padding: 0.25em 0.5em;
+  text-decoration:none;
+  color:black;
+  }
+
+#friends a:hover {
+   color:#e83889;
+   }
+
+.img_center {
+    text-align:center;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-top:10px;
+
+}
+
+.bulleted {
+    float: left;
+    display: block;
+    height: 15px;
+    padding-left: 5px;
+    background: url('images/nav-bullet.png') no-repeat 0px 5px;
+    font-size: 1.0em;
+   }
+
+.bulleted_heading
+{
+	padding: 0.75em;
+}
+
+.first_header
+{
+	padding-top:15px;
+}
+.pt-10
+{
+	padding-top:10px;
+	float: left;
+}
+.pt-15
+{
+	padding-top:15px;
+	float: left;
+}
+.pt-25
+{
+	padding-top:25px;
+	float: left;
+}
+.pt-35
+{
+	padding-top:35px;
+	float: left;
+}
+.pt-45
+{
+	padding-top:45px;
+	float: left;
+}
+
+.selected
+{
+	font-weight:bold;
+}
+
+#slideshow { left: 100px;top:30px;}
+#nav { width: 270px; margin: 0px; padding-left: 25px;}
+#nav li { width: 80px; float: left; margin: 10px; list-style: none }
+#nav a { width: 80px; padding: 6px; display: block; border: 1px solid #ccc; }
+#nav a.activeSlide { background: #88f }
+#nav a:focus { outline: none; }
+#nav img { border: none; display: block }
+
+.subheading a  {
+  padding: 0.25em 0.5em;
+  text-decoration:none;
+  color:black;
+  }
+
+
+.subheading a:hover {
+   color:#e83889;
+   }
+

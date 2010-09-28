@@ -1,87 +1,195 @@
 --- 
-index.html:
-  divs: 
-    pagetitle: <img src="images/event-header.png" />
-    pagecontent: '<div class="img_center"><img class="home_bordered" src="images/home-main.jpg" /></div><div class="img_center"><img style="padding-top: 20px; padding-bottom: 20px;" src="images/home-quote.jpg"/></div>'
-  title: Bridesbutler.ca | home
-  filename: index.html
-  meta-description: Home page
 about.html:
-  divs: 
-    pagetitle: <img src="images/about-header.png" />
-    pagecontent: <div id="content-left"><h3>My Objective:</h3>To provide affordable and professional Wedding &amp; Event services to clients using the best resources available to achieve a common goal; a fabulous, memorable event!<h3>My Goal:</h3> To successfully assist clients in coordinating and executing their ideas, dreams and visions into a special event.<h3>Who is The Bride’s Butler?</h3>Diane Morris owns and operates The Bride’s Butler out of Hamilton, Ontario.  Her passion for planning events has been noticeable since childhood, planning birthday parties, themed dinner gatherings and holiday fundraisers. <p>Being a Wedding Planner has always been a dream of hers, and so The Bride’s Butler was created in 2008.  She’s a certified Wedding Coordinator through the (WPIC), and a graduate of Mohawk College’s Event Management program. Diane also has a diploma from Mohawk’s Advertising &amp; Communications program.</p><p>Diane works with local vendors to supply Brides with tips, ideas and discounts to create and produce the wedding of their dreams.  Along with planning weddings, Diane has created and executed many events for AM740, Citykidz, Hamilton Mountain Slo-Pitch League, Thee City of Hamilton and The Salvation Army.</p></div><div id="photo-right"><img id="bordered" src="images/about-top.jpg" /><img id="bordered" src="images/about-middle.jpg" /><img id="bordered" src="images/about-bottom.jpg" /></div>
-  title: Bridesbutler.ca | about
+  pagecontent: |
+    <h4>My Objective:</h4>To provide affordable and professional 
+    Wedding &amp; Event services to clients using the best resources available to achieve a common goal; a 
+    fabulous, memorable event!<h4>My Goal:</h4> To successfully assist clients in coordinating and executing their ideas, 
+    dreams and visions into a special event.<h4>Who is The Bride’s Butler?</h4>Diane Morris owns and operates 
+    The Bride’s Butler out of Hamilton, Ontario.  Her passion for planning events has been noticeable since childhood, 
+    planning birthday parties, themed dinner gatherings and holiday fundraisers. <p>Being a Wedding 
+    Planner has always been a dream of hers, and so The Bride’s Butler was created in 2008.  She’s a certified Wedding 
+    Coordinator through the (WPIC), and a graduate of Mohawk College’s Event Management program. 
+    Diane also has a diploma from Mohawk’s Advertising &amp; Communications program.</p><p>Diane works with local vendors 
+    to supply Brides with tips, ideas and discounts to create and produce the wedding of their dreams.  
+    Along with planning weddings, Diane has created and executed many events for AM740, Citykidz, 
+    Hamilton Mountain Slo-Pitch League, The City of Hamilton and The Salvation Army.</p>
+  title: Bridesbutler.ca | about > WPIC Wedding Planner Coordinator Special Events Planning Hamilton ON
   filename: about.html
   meta-description: About page
+  pagename: about
+  image_prefix: about
 friends.html:
-  divs: 
-    pagetitle: <img src="images/about-header.png" />
-    pagecontent: <p>As a client of the Bride's Butler, you're able to receive discounts from a variety of friends within the wedding industry.  A Wedding Planner can help you save time and money by referring you to professionals that suit your style, personality and budget.</p><ul><li><a href="http://fotoflare.ca/">Foto Flare Photography</a></li><li><a href="http://www.imagesofyou.ca/">Images of You</a></li><li><a href="http://www.aslawsonphotography.ca/">AS Lawson Photography</a></li><li><a href="http://www.kayladoylephotography.com/">Kayla Doyle Photography</a></li><li><a href="http://www.designsbylaw.ca/">Designs By Law</a></li><li><a href="http://www.westdaleflorist.ca/">Westdale Florist</a></li><li><a href="http://www.socialnotes.ca/">Social Notes Invitations</a></li><li><a href="http://www.invitationsbysansheiras.com/">Invitations by SansSheiras</a></li><li><a href="http://www.bigorangedesigns.com/">Big Orange Designs</a></li><li><a href="http://hottibiscotti.ca/"></a>Hotti Biscotti</li><li><a href="http://www.deborahcoleman.ca/">Reverend Deborah Coleman</a></li><li>Reverend Ann Coburn<br />905.387.8941</li><li>Jack of All Spades</li></ul>
-  title: Bridesbutler.ca | friends
+  pagecontent: |
+    <p>As a client of the Bride's Butler, you're able to receive discounts from a variety of friends within the wedding industry.  
+    A Wedding Planner can help you save time and money by referring you to professionals that suit your style, personality and 
+    budget.</p><ul id="friends"><li><a href="http://fotoflare.ca/">Foto Flare Photography</a></li>
+    <li><a href="http://www.imagesofyou.ca/">Images of You</a></li>
+    <li><a href="http://www.aslawsonphotography.ca/">AS Lawson Photography</a></li>
+    <li><a href="http://www.kayladoylephotography.com/">Kayla Doyle Photography</a></li>
+    <li><a href="http://www.designsbylaw.ca/">Designs By Law</a></li>
+    <li><a href="http://www.westdaleflorist.ca/">Westdale Florist</a></li>
+    <li><a href="http://www.socialnotes.ca/">Social Notes Invitations</a></li>
+    <li><a href="http://www.invitationsbysansheiras.com/">Invitations by SansSheiras</a></li>
+    <li><a href="http://www.bigorangedesigns.com/">Big Orange Designs</a></li>
+    <li><a href="http://hottibiscotti.ca/">Hotti Biscotti</a></li>
+    <li><a href="http://www.deborahcoleman.ca/">Reverend Deborah Coleman</a></li>
+    <li><span class="friends_non_a">Reverend Ann Coburn</span><br /><span class="friends_non_a">905.387.8941</span></li>
+    <li><span class="friends_non_a">Jack of All Spades</span></li></ul>
+  title: Bridesbutler.ca | friendors > WPIC Wedding Planner Coordinator Special Events Planning Hamilton ON
   filename: friends.html
   meta-description: Friends of the Bridesbutler.ca
+  pagename: friendors
+  image_prefix: friendors
 weddings.html:
-  divs: 
-    pagetitle: '<img src="images/weddings-header.png" />'
-    pagecontent: <div id="photo-left"><img id="bordered" src="images/weddings-top.jpg" /><img id="bordered" src="images/weddings-middle.jpg" /><img id="bordered" src="images/weddings-bottom.jpg" /></div><div id="content-right"><p>Congratulations on your upcoming wedding!  You have found the love of your life, you have told all your friends and family about your engagement, and you might have even chosen a date for your special day... but, now what?  </p><p>At The Bride\'s Butler, we are here to provide you with the wedding of your dreams.  A coordinator can offer you the piece of mind needed to fully experience one of the most important days of your life.  The Bride's Butler can offer many ways to maximize enjoyment and minimize stress on the day you say "I do."</p><h3>Why hire a wedding planner?</h3><p><strong>The Bride’s Butler can save you money</strong><br />We can provide discounts that are only offered through working with a Planner</p><p><strong>Less Stress</strong><br />Take ease in knowing that a professional is working with you to plan the most important day of your life</p><p><strong>You have little time to properly plan your wedding</strong><br />It takes on average 250 hours to plan a wedding</p><p><strong>You are a detail oriented and organized individual</strong><br />You cant be 2 places at once on your wedding day</p><p><strong>Hindsight is 20/20</strong><br />Ask almost any bride, and she’ll tell you that if she was to plan her wedding again, she would have hired a Planner.</p></div><div id="content-span"> Images provided by- <a href="http://fotoflare.ca/">Foto Flare Photography</a> and <a href="http://www.imagesofyou.ca/">Images of You Photography</a></div>
-  title: Bridesbutler.ca | weddings
+  pagecontent: |
+    <div id="submenu">
+    <ul class="nav">
+    <li><a href="why.html">why hire a planner?</a></li>
+    <li><a href="consultation.html">consultation</a></li>
+    <li><a href="dayof.html">day of coordination </a></li>
+    <li><a href="planning.html">full wedding planning</a></li>
+    </ul>
+    </div>
+    <p>&nbsp;</p>
+    <div class="pt-10"><p>Congratulations on your upcoming wedding! You have found the love of your life, you have told all your friends and family about your engagement, and you might have even chosen a date for your special day... but, now what?  </p><p>At The Bride's Butler, we are here to provide you with the wedding of your dreams.  A coordinator can offer you the piece of mind needed to fully experience one of the most important days of your life.  The Bride's Butler can offer many ways to maximize enjoyment and minimize stress on the day you say "I do."</p>
+    <p>
+    Choose one of our 3 services that can be customized to meet your needs and budget. From Consultations to Full Wedding Planning, The Bride's Butler can provide you with as much assistance as you require to plan your special day. Our most popular service is Day of Coordination - perfect for the 'Do It Yourself' Bride. With this service you plan your wedding day and we see all of your hard work, ideas and details through. All services are provided by and executed by a WPIC certified Wedding Coordinator.
+    </p>
+    </div>
+  title: Bridesbutler.ca | weddings > WPIC Wedding Planner Coordinator Special Events Planning Hamilton ON
   filename: weddings.html
+  pagename: weddings
+  image_prefix: wedding
   meta-description: Weddings by the Bridesbutler.ca
 events.html:
-  divs: 
-    pagetitle: <img src="images/events-header.png" />
-    pagecontent: <strong>Let us also be the butler for any corporate or social events.</strong>
-                 <p>Even though the Bride's Butler caters to the every need of the blushing bride, we can also be the butler for any corporate or social event</p>
-                 <ul><li>fundraisers</li><li>charity functions</li><li>company picnics</li><li>anniversary parties</li><li>team building seminars</li><li>birthday parties</li><li>themed events</li><li>baby showers</li><li>holiday events</li><li>trade shows</li><li>conferences</li></ul>
-                 <p>Fees are based on chosen service, number of guests, logistical components and season.<br />Contact us for more information or a quote</p>
-  title: Bridesbutler.ca | events
+  pagecontent:  |
+    <strong>Let us also be the butler for any corporate or social events.</strong> 
+    <p>Even though the Bride's Butler caters to the every need of the blushing bride, 
+    we can also be the butler for any corporate or social event</p> 
+    <ul style="line-height: 1.8"><li>baby showers</li>
+    <li>fundraisers</li>
+    <li>charity functions</li>
+    <li>company picnics</li>
+    <li>anniversary parties</li>
+    <li>team building seminars</li>
+    <li>birthday parties</li>
+    <li>themed events</li>
+    <li>holiday events</li>
+    <li>trade shows</li>
+    <li>conferences</li></ul> 
+    <p>Fees are based on chosen service, number of guests, logistical components and season.
+    <br />Contact us for more information or a quote</p>
+  title: Bridesbutler.ca | events > WPIC Wedding Planner Coordinator Special Events Planning Hamilton ON
   filename: events.html
   meta-description: Events by the Bridesbutler.ca
+  pagename: events
+  image_prefix: events
 consultation.html:
-  divs: 
-    pagetitle: <img src="images/weddings-header.png" />
-    pagecontent: '<div id="content-span"><p>Planning a wedding by yourself or with loved ones and friends can not only be exciting, fun, imaginative and memorable, but it can also be time consuming, stressful and expensive.</p><p>As your Wedding Consultant, we can aid you in a variety of ways, including, but not limited to: </p><ul><li>Theme development</li><li>Vendor referral and selection</li><li>Timeline preparation</li><li>Budget construction and allocation</li><li>Etiquette standards</li><li>Any other questions you may have</li></ul><p>A wedding consultation meeting does not need to take place at the beginning of your planning process.  Ideas, direction, questions and advice can be obtained at any time before your big day.</p><p>Fee:  $150 for the first hour, $50 every hour thereafter</p><p>Consultations are conducted through face to face meetings, and are driven by your wedding needs</p></div>'
-  title: Bridesbutler.ca | consultation
+  pagecontent: |
+    <div id="submenu">
+    <ul class="nav">
+    <li><a href="why.html">why hire a planner?</a></li>
+    <li><a href="consultation.html" class="selected">consultation</a></li>
+    <li><a href="dayof.html">day of coordination </a></li>
+    <li><a href="planning.html">full wedding planning</a></li>
+    </ul>
+    </div>
+    <div class="pt-10">
+    <p>Planning a wedding by yourself or with loved ones and friends can not only be exciting, fun, imaginative and memorable, 
+    but it can also be time consuming, stressful and expensive.</p><p>As your Wedding Consultant, 
+    we can aid you in a variety of ways, including, but not limited to: </p><ul>
+    <li>Theme development</li><li>Vendor referral and selection</li>
+    <li>Timeline preparation</li><li>Budget construction and allocation</li>
+    <li>Etiquette standards</li><li>Any other questions you may have</li></ul>
+    <p>A wedding consultation meeting does not need to take place at the beginning of your planning process.  
+    Ideas, direction, questions and advice can be obtained at any time before your big day.</p>
+    <p>Fee:  $150 for the first hour, $50 every hour thereafter</p>
+    <p>Consultations are conducted through face to face meetings, and are driven by your wedding needs</p>
+    </div>
+  title: Bridesbutler.ca | consultation > WPIC Wedding Planner Coordinator Special Events Planning Hamilton ON
   filename: consultation.html
   meta-description: Consultation by the Bridesbutler.ca
+  pagename: weddings
+  image_prefix: consultation
 dayof.html:
-  divs: 
-    pagetitle: <img src="images/weddings-header.png" />
-    pagecontent: <div id="content-span"><p>Many brides plan their entire wedding on their own.  This lengthy process consumes both time and energy.  
-                 The Day Of Coordination Package allows for the bride and groom (as well as the wedding party, family and guests) to enjoy the wedding day
-                 to the fullest.</p><h2>The Day Of Coordination Package includes:</h2><ul><li>An hour long meeting prior to your wedding to discuss
-                 details</li><li>Continuous support via phone or email leading up to your big day</li><li>Coordination at the wedding
-                 rehearsal</li><li>Wedding day management (set-up, ceremony, photos, reception and clean-up)</li></ul>
-                 <p>The Bride's Butler will devote their time on your special day to the fine details so you don't have to.
-                 It is extremely reassuring to know that a trusted professional will ensure that your day feels like a fairytale.</p>
-                 <p>Fee|  please contact for a quote</p>
-  title: 'Bridesbutler.ca | day of coordination'
+  pagecontent: |
+    <div id="submenu">
+    <ul class="nav">
+    <li><a href="why.html">why hire a planner?</a></li>
+    <li><a href="consultation.html">consultation</a></li>
+    <li><a href="dayof.html" class="selected">day of coordination </a></li>
+    <li><a href="planning.html">full wedding planning</a></li>
+    </ul>
+    </div>
+    <div class="pt-10">
+    <p>Many brides plan their entire wedding on their own.  This lengthy process consumes both time and energy. 
+    The Day Of Coordination Package allows for the bride and groom (as well as the wedding party, family and guests) 
+    to enjoy the wedding day to the fullest.</p>
+    <h4>The Day Of Coordination Package includes:</h4><ul><li>An hour long meeting prior to your wedding to discuss details</li>
+    <li>Continuous support via phone or email leading up to your big day</li>
+    <li>Coordination at the wedding rehearsal</li>
+    <li>Wedding day management (set-up, ceremony, photos, reception and clean-up)</li></ul> 
+    <p>The Bride's Butler will devote their time on your special day to the fine details so you don't have to. 
+    It is extremely reassuring to know that a trusted professional will ensure that your day feels like a fairytale.</p> 
+    <p>Fee:  please contact for a quote</p>
+    </div>
+  title: Bridesbutler.ca | day of coordination > WPIC Wedding Planner Coordinator Special Events Planning Hamilton ON
   filename: dayof.html
   meta-description: Day of Coordination by the Bridesbutler.ca
+  pagename: weddings
+  image_prefix: dayof
 planning.html:
-  divs: 
-    pagetitle: <img src="images/weddings-header.png" />
-               <div id="submenu">
-               <ul id="submenu">
-               <li><a href="consultation.html">consultation</a></li>
-               <li><a class="current" href="dayof.html">day of coordination</a></li>
-               <li><a href="planning.html">full wedding planning</a></li>
-               </ul>
-               </div>
-    pagecontent: <div id="content-span"><p>Did you know the average Canadian wedding takes over 250 hours in planning and requires over 177
-                 decisions?</p><p>Let the Bride's Butler cater to your every need so that you can enjoy the planning process and significantly 
-                 reduce your workload and stress level.</p><h4>The Full Wedding Planning Package includes:</h4><ul><li>2 one-hour long meetings 
-                 prior to your wedding (first meeting as consultation)</li><li>Industry discounts offered only through a certified Wedding 
-                 Coordinator</li><li>Professional advice and guidance</li><li>Coordination of the wedding rehearsal</li>
-                 <li>Wedding day management (set-up, ceremony, photos, reception and clean-up)</li><li>Theme development</li>
-                 <li>Timeline preparation</li><li>Budget construction and allocation</li><li>Etiquette standards</li>
-                 <li>Vendor referral and selection</li></ul><p>Fee|   10% of the total wedding budget<br />
-                 + additional fees may apply for supplementary meetings</p></div>
-                 <div id="content-span">Images provided by <a href="http://fotoflare.ca/">Foto Flare Photography</a> 
-                 and <a href="http://www.imagesofyou.ca/">Images of You Photography</a></div>
-  title: Bridesbutler.ca | full wedding planning
+  pagecontent: |
+    <div id="submenu">
+    <ul class="nav">
+    <li><a href="why.html">why hire a planner?</a></li>
+    <li><a href="consultation.html">consultation</a></li>
+    <li><a href="dayof.html">day of coordination </a></li>
+    <li><a href="planning.html" class="selected">full wedding planning</a></li>
+    </ul>
+    </div>
+    <div class="pt-10">
+    <p>Did you know the average Canadian wedding takes over 250 hours in planning and requires over 177 decisions?</p>
+    <p>Let the Bride's Butler cater to your every need so that you can enjoy the planning process and significantly reduce 
+    your workload and stress level.</p><h4>The Full Wedding Planning Package includes:</h4>
+    <ul><li>2 one-hour long meetings prior to your wedding (first meeting as consultation)</li>
+    <li>Industry discounts offered only through a certified Wedding Coordinator</li>
+    <li>Professional advice and guidance</li><li>Coordination of the wedding rehearsal</li> 
+    <li>Wedding day management (set-up, ceremony, photos, reception and clean-up)</li>
+    <li>Theme development</li> <li>Timeline preparation</li><li>Budget construction and allocation</li>
+    <li>Etiquette standards</li> <li>Vendor referral and selection</li></ul>
+    <p>Fee: 10% of the total wedding budget<br /> + additional fees may apply for supplementary meetings</p>
+    </div>
+  title: Bridesbutler.ca | full wedding planning > WPIC Wedding Planner Coordinator Special Events Planning Hamilton ON
   filename: dayof.html
   meta-description: Full Wedding Planning by the Bridesbutler.ca
+  pagename: weddings
+  image_prefix: planning
+why.html:
+  pagecontent: |
+    <div id="submenu">
+    <ul class="nav">
+    <li><a href="why.html" class="selected">why hire a planner?</a></li>
+    <li><a href="consultation.html">consultation</a></li>
+    <li><a href="dayof.html">day of coordination </a></li>
+    <li><a href="planning.html">full wedding planning</a></li>
+    </ul>
+    </div>
+    <div class="pt-10">
+    <p><strong>The Bride’s Butler can save you money</strong><br />
+    We can provide discounts that are only offered through working with a Planner</p>
+    <p><strong>Less Stress</strong><br />Take ease in knowing that a professional is working with you to plan the most important day of your life</p>
+    <p><strong>You have little time to properly plan your wedding</strong><br />It takes on average 250 hours to plan a wedding</p>
+    <p><strong>You are a detail oriented and organized individual</strong>
+    <br />You cant be 2 places at once on your wedding day</p><p><strong>Hindsight is 20/20</strong>
+    <br />Ask almost any bride, and she’ll tell you that if she was to plan her wedding again, she would have hired a Planner.</p>
+    </div>
+  title: Bridesbutler.ca | why hire a wedding planner? > WPIC Wedding Planner Coordinator Special Events Planning Hamilton ON
+  filename: why.html
+  meta-description: Full Wedding Planning by the Bridesbutler.ca
+  pagename: weddings
+  image_prefix: whyhire
+  
   
   
   

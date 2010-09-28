@@ -30,9 +30,18 @@ body {
     left: 0px;
     top: 0px;
     background-color:white;
+/*
     background-image: url(images/header.png);
     background-position:left top;
-    background-repeat:no-repeat;
+    background-repeat:no-repeat; */
+}
+
+#brides-butler-logo {
+    background-image: url(images/header.png);
+    display:block;
+    height:131px;
+    text-indent:-9999px;
+    width:403px;
 }
 
 #left-photo
@@ -167,6 +176,12 @@ body {
  .nodeco{
      text-decoration: none;
      border: 0px;
+	color: black;
+ }
+.nodeco a:visited {
+     text-decoration: none;
+     border: 0px;
+	color: black;
  }
 
 #submenu {
@@ -182,9 +197,9 @@ body {
     float: left;
     display: block;
     height: 25px;
-    padding-left: 15px;
+    padding-left: 12px;
     background: url('images/nav-bullet.png') no-repeat 8px 5px;
-    font-size:1.0em;
+    font-size:0.98em;
    }
 
 
@@ -247,22 +262,27 @@ body {
 .pt-10
 {
 	padding-top:10px;
+	float: left;
 }
 .pt-15
 {
 	padding-top:15px;
+	float: left;
 }
 .pt-25
 {
 	padding-top:25px;
+	float: left;
 }
 .pt-35
 {
 	padding-top:35px;
+	float: left;
 }
 .pt-45
 {
 	padding-top:45px;
+	float: left;
 }
 
 .selected
@@ -277,4 +297,15 @@ body {
 #nav a.activeSlide { background: #88f }
 #nav a:focus { outline: none; }
 #nav img { border: none; display: block }
+
+.subheading a  {
+  padding: 0.25em 0.5em;
+  text-decoration:none;
+  color:black;
+  }
+
+
+.subheading a:hover {
+   color:#e83889;
+   }
 

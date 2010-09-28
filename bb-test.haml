@@ -1,0 +1,55 @@
+%html{ :xmlns => "http://www.w3.org/1999/xhtml", :lang => "en", "xml:lang" => "en"}
+  %head
+    %title= title
+    %meta{"http-equiv" => "Content-Type", :content => "text/html; charset=utf-8"} 
+    %link{:type=>"text/css", :rel=>"stylesheet", :href=>"newbridesbutler.css"}
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-18499945-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+  %body
+    #main-container
+      #header
+        <a href="http://www.bridesbutler.ca" title="Brides butler.ca" id="brides-butler-logo">Bridesbutler.ca</a>
+        #navmenu
+          %ul.nav
+            %li
+              %a{:href => "about.html"} about
+            %li
+              %a{:href => "weddings.html"} weddings
+            %li
+              %a{:href => "events.html" } events
+            %li
+              %a{:href => "friends.html" } friendors
+            %li
+              %a{:href => "http://bridesbutler.blogspot.com/", :target => "_blank" } blog
+        #buttons
+          %a.nodeco{:href => "http://twitter.com/bridesbutler"}
+            %img.nodeco{:src => "images/twittericon-small.png"}
+          %a.nodeco{:href => "http://www.facebook.com/pages/Hamilton-ON/The-Brides-Butler-Wedding-Event-Planning/223115771167"}
+            %img.nodeco{:src => "images/facebookicon-small.png"}
+      #content
+        %h3.bulleted
+          %span.bulleted_heading= pagename
+        %br
+        %br
+        = content
+      #left-photo
+        %img{:src=>"images/#{image_prefix}-1.jpg", :title =>""}
+      #bottom-left-photo
+        %img{:src=>"images/#{image_prefix}-2.jpg", :title =>""}
+      #bottom-mid-photo
+        %img{:src=>"images/#{image_prefix}-3.jpg", :title =>""}
+      #bottom-right-photo
+        %img{:src=>"images/#{image_prefix}-4.jpg", :title =>""}
+    #footer
+      The Brides Butler | Contact Us: 905.516.9060 or <a href="mailto:info@bridesbutler.ca">info@bridesbutler.ca</a> | Copyright 2010. All Rights Reserved.<br />
+      #content-span
+        Images provided by: <a href="http://fotoflare.ca/">Foto Flare Photography</a> and <a href="http://www.imagesofyou.ca/">Images of You Photography</a>
+      <a href="about.html">about</a> | <a href="weddings.html">weddings</a> | <a href="http://bridesbutler.blogspot.com/">blog</a> | <a href="events.html">events</a> | <a href="friends.html">friends</a> | contact us
