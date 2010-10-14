@@ -1,8 +1,13 @@
+!!!
 %html{ :xmlns => "http://www.w3.org/1999/xhtml", :lang => "en", "xml:lang" => "en"}
   %head
     %title= title
     %meta{"http-equiv" => "Content-Type", :content => "text/html; charset=utf-8"} 
     %link{:type=>"text/css", :rel=>"stylesheet", :href=>"newbridesbutler.css"}
+    %script{:type => "text/javascript",
+            :src  => "http://code.jquery.com/jquery-1.4.2.js"}
+    %script{:type => "text/javascript",
+            :src  => "javascripts/jquery-sw-lightbox.js"}
     :javascript
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-18499945-1']);
@@ -29,27 +34,67 @@
               %a{:href => "friends.html" } friendors
             %li
               %a{:href => "http://bridesbutler.blogspot.com/", :target => "_blank" } blog
+            %li
+              %a{:href=>"javascript:lightbox('#contactform');" } contact
         #buttons
           %a.nodeco{:href => "http://twitter.com/bridesbutler"}
             %img.nodeco{:src => "images/twittericon-small.png"}
           %a.nodeco{:href => "http://www.facebook.com/pages/Hamilton-ON/The-Brides-Butler-Wedding-Event-Planning/223115771167"}
             %img.nodeco{:src => "images/facebookicon-small.png"}
-      #content
-        %h3.bulleted
-          %span.bulleted_heading= pagename
-        %br
-        %br
-        = content
-      #left-photo
-        %img{:src=>"images/#{image_prefix}-1.jpg", :title =>""}
-      #bottom-left-photo
-        %img{:src=>"images/#{image_prefix}-2.jpg", :title =>""}
-      #bottom-mid-photo
-        %img{:src=>"images/#{image_prefix}-3.jpg", :title =>""}
-      #bottom-right-photo
-        %img{:src=>"images/#{image_prefix}-4.jpg", :title =>""}
+      - if pagename == 'home'
+        #index-content
+          = content
+      - else
+        #content
+          %h3.bulleted
+            %span.bulleted_heading= pagename
+          %br
+          %br
+          = content
+        #left-photo
+          %img{:src=>"images/#{image_prefix}-1.jpg", :title =>""}
+        #bottom-left-photo
+          %img{:src=>"images/#{image_prefix}-2.jpg", :title =>""}
+        #bottom-mid-photo
+          %img{:src=>"images/#{image_prefix}-3.jpg", :title =>""}
+        #bottom-right-photo
+          %img{:src=>"images/#{image_prefix}-4.jpg", :title =>""}
     #footer
       The Brides Butler | Contact Us: 905.516.9060 or <a href="mailto:info@bridesbutler.ca">info@bridesbutler.ca</a> | Copyright 2010. All Rights Reserved.<br />
       #content-span
         Images provided by: <a href="http://fotoflare.ca/">Foto Flare Photography</a> and <a href="http://www.imagesofyou.ca/">Images of You Photography</a>
-      <a href="about.html">about</a> | <a href="weddings.html">weddings</a> | <a href="http://bridesbutler.blogspot.com/">blog</a> | <a href="events.html">events</a> | <a href="friends.html">friends</a> | contact us
+      <a href="about.html">about</a> | <a href="weddings.html">weddings</a> | <a href="http://bridesbutler.blogspot.com/">blog</a> | <a href="events.html">events</a> | <a href="friends.html">friends</a> | <a href="javascript:lightbox('#contactform');">contact us</a>
+    #contactform{:style => "display:none;"}
+      #form{:style => "border: 6px solid #CCCCCC; padding: 15px; background: none repeat scroll 0 0 #FFFFFF;"}
+        %h3 Contact Us
+        %p The Bride's Butler would be thrilled to meet with you to discuss services and learn more about your event. Please fill in each field below and I will contact you to schedule a complimentary consultation.
+        %p You may also contact us directly at <a href="mailto:info@bridesbutler.ca">info@bridesbutler.ca</a> or 905.516.9060.<br />
+        %form{:name=> "formcheck",  :enctype=>"multipart/form-data", :method=>"post", :action=>"phpmailer.php",  :id=>"formcheck"}
+          %dl.contactform
+            %dt
+              %label{:for=>"name"} Name:
+            %dd
+              %input{:maxlength=>"30", :name=>"name", :class=>"", :value=>"", :tabindex=>"5", :style=>"", :type=>"text"}
+            %dt
+              %label{:for=>"email"} Email:
+            %dd
+              %input{:maxlength=>"30", :name=>"email", :class=>"", :value=>"", :tabindex=>"5", :style=>"", :type=>"text"}
+            %dt
+              %label{:for=>"dayphone"} Daytime phone:
+            %dd
+              %input{:maxlength=>"30", :name=>"dayphone", :class=>"", :value=>"", :tabindex=>"5", :style=>"", :type=>"text"}
+            %dt
+              %label.hear Who Referred You?
+            %dd
+              %select{:name=>"referredfrom"}
+                %option{:value=>"Friend/Family Referral"}Friend/Family Referral
+                %option{:value=>"Google"} Google
+                %option{:value=>"Facebook"} Facebook
+                %option{:value=>"Twitter"} Twitter
+                %option{:value=>"Other"} Other
+            %dt
+              %label.ifother If Other
+            %dd
+              %input{:maxlength=>"30", :name=>"other", :class=>"", :value=>"", :tabindex=>"5", :style=>"", :type=>"text"}
+            %dd>
+              %input{:type=>"submit", :value=>"SUBMIT"}

@@ -1,8 +1,11 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
   <head>
-    <title>WPIC Wedding Planner Coordinator Special Events Planning Hamilton ON < events | Bridesbutler.ca</title>
+    <title>Bridesbutler.ca | events > WPIC Wedding Planner Coordinator Special Events Planning Hamilton ON</title>
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
     <link href='newbridesbutler.css' rel='stylesheet' type='text/css' />
+    <script src='http://code.jquery.com/jquery-1.4.2.js' type='text/javascript'></script>
+    <script src='javascripts/jquery-sw-lightbox.js' type='text/javascript'></script>
     <script type='text/javascript'>
       //<![CDATA[
         var _gaq = _gaq || [];
@@ -37,6 +40,9 @@
             </li>
             <li>
               <a href='http://bridesbutler.blogspot.com/' target='_blank'>blog</a>
+            </li>
+            <li>
+              <a href="javascript:lightbox('#contactform');">contact</a>
             </li>
           </ul>
         </div>
@@ -90,7 +96,55 @@
       <div id='content-span'>
         Images provided by: <a href="http://fotoflare.ca/">Foto Flare Photography</a> and <a href="http://www.imagesofyou.ca/">Images of You Photography</a>
       </div>
-      <a href="about.html">about</a> | <a href="weddings.html">weddings</a> | <a href="http://bridesbutler.blogspot.com/">blog</a> | <a href="events.html">events</a> | <a href="friends.html">friends</a> | contact us
+      <a href="about.html">about</a> | <a href="weddings.html">weddings</a> | <a href="http://bridesbutler.blogspot.com/">blog</a> | <a href="events.html">events</a> | <a href="friends.html">friends</a> | <a href="javascript:lightbox('#contactform');">contact us</a>
+    </div>
+    <div id='contactform' style='display:none;'>
+      <div id='form' style='border: 6px solid #CCCCCC; padding: 15px; background: none repeat scroll 0 0 #FFFFFF;'>
+        <h3>Contact Us</h3>
+        <p>The Bride's Butler would be thrilled to meet with you to discuss services and learn more about your event. Please fill in each field below and I will contact you to schedule a complimentary consultation.</p>
+        <p>You may also contact us directly at <a href="mailto:info@bridesbutler.ca">info@bridesbutler.ca</a> or 905.516.9060.<br /></p>
+        <form action='phpmailer.php' enctype='multipart/form-data' id='formcheck' method='post' name='formcheck'>
+          <dl class='contactform'>
+            <dt>
+              <label for='name'>Name:</label>
+            </dt>
+            <dd>
+              <input class='' maxlength='30' name='name' style='' tabindex='5' type='text' value='' />
+            </dd>
+            <dt>
+              <label for='email'>Email:</label>
+            </dt>
+            <dd>
+              <input class='' maxlength='30' name='email' style='' tabindex='5' type='text' value='' />
+            </dd>
+            <dt>
+              <label for='dayphone'>Daytime phone:</label>
+            </dt>
+            <dd>
+              <input class='' maxlength='30' name='dayphone' style='' tabindex='5' type='text' value='' />
+            </dd>
+            <dt>
+              <label class='hear'>Who Referred You?</label>
+            </dt>
+            <dd>
+              <select name='referredfrom'>
+                <option value='Friend/Family Referral'>Friend/Family Referral</option>
+                <option value='Google'>Google</option>
+                <option value='Facebook'>Facebook</option>
+                <option value='Twitter'>Twitter</option>
+                <option value='Other'>Other</option>
+              </select>
+            </dd>
+            <dt>
+              <label class='ifother'>If Other</label>
+            </dt>
+            <dd>
+              <input class='' maxlength='30' name='other' style='' tabindex='5' type='text' value='' />
+            </dd><dd>
+              <input type='submit' value='SUBMIT' />
+            </dd></dl>
+        </form>
+      </div>
     </div>
   </body>
 </html>

@@ -181,7 +181,7 @@ why.html:
     <p><strong>Less Stress</strong><br />Take ease in knowing that a professional is working with you to plan the most important day of your life</p>
     <p><strong>You have little time to properly plan your wedding</strong><br />It takes on average 250 hours to plan a wedding</p>
     <p><strong>You are a detail oriented and organized individual</strong>
-    <br />You cant be 2 places at once on your wedding day</p><p><strong>Hindsight is 20/20</strong>
+    <br />You can't be two places at once on your wedding day</p><p><strong>Hindsight is 20/20</strong>
     <br />Ask almost any bride, and she’ll tell you that if she was to plan her wedding again, she would have hired a Planner.</p>
     </div>
   title: Bridesbutler.ca | why hire a wedding planner? > WPIC Wedding Planner Coordinator Special Events Planning Hamilton ON
@@ -189,6 +189,16 @@ why.html:
   meta-description: Full Wedding Planning by the Bridesbutler.ca
   pagename: weddings
   image_prefix: whyhire
+index.html:
+  pagecontent: |
+    <div class="img_center"><img class="home_bordered" src="images/home-main.jpg" /></div>
+    <div class="img_center"><img style="padding-top: 20px; padding-bottom: 20px;" src="images/home-quote.jpg"/></div></div>
+    </div>
+  title: Bridesbutler.ca | home > WPIC Wedding Planner Coordinator Special Events Planning Hamilton ON
+  filename: why.html
+  meta-description: Full Wedding Planning by the Bridesbutler.ca
+  pagename: home
+  image_prefix: NA
   
   
   

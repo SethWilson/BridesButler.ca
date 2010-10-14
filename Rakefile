@@ -20,10 +20,12 @@ REMOTE_SERVER='diznee.ipower.com'
 REMOTE_LOGIN='sethmaster'
 REMOTE_PASSWORD='dudeWTF!12345'
 
-html_files = FileList['friends.html', 'about.html', 'weddings.html', 'events.html', 'dayof.html', 'consultation.html', 'planning.html', 'why.html']
+html_files = FileList['index.html','friends.html', 'about.html', 'weddings.html', 'events.html', 'dayof.html', 'consultation.html', 'planning.html', 'why.html']
 css_files = FileList['*.css']
 image_files = FileList['images/*.jpg', 'images/*.png', 'images/*.gif']
-static_files = FileList['*.xml', '*.txt']
+text_files = FileList['*.xml', '*.txt']
+js_files = FileList['javascripts/*.js']
+php_files = FileList['*.php']
 
 CLEAN.include(html_files)
 
@@ -91,7 +93,12 @@ end
 
 
 desc "Deploy all files for the Brides Butler website"
-task :deploy_all => ['deploy_html', 'deploy_css', 'deploy_images', 'deploy_static', 'deploy_js']do
+task :deploy_all => ['deploy_html', 'deploy_css', 'deploy_images', 'deploy_static', 'deploy_js', 'deploy_php'] do
+ 
+end
+
+desc "Deploy all static files for the Brides Butler website"
+task :deploy_static => ['deploy_css', 'deploy_images', 'deploy_text', 'deploy_js', 'deploy_php'] do
  
 end
 
@@ -127,13 +134,18 @@ task :deploy_images do
 end
 
 desc "Deploy any and all static files"
-task :deploy_static do
-    send_files(image_files)
+task :deploy_text do
+    send_files(text_files)
 end
 
 desc "Deploy any and all javascript files"
 task :deploy_js do
-    send_files(image_files)
+    send_files(js_files)
+end
+
+desc "Deploy any and all javascript files"
+task :deploy_php do
+    send_files(php_files)
 end
 
 desc "Build a sitemap based on files provided"
