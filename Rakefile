@@ -20,6 +20,7 @@ REMOTE_SERVER='diznee.ipower.com'
 REMOTE_LOGIN='sethmaster'
 REMOTE_PASSWORD='dudeWTF!12345'
 
+#TODO: Get the file list by performing a look at the YAML file and determining pages from that
 html_files = FileList['index.html','friends.html', 'about.html', 'weddings.html', 'events.html', 'dayof.html', 'consultation.html', 'planning.html', 'why.html']
 css_files = FileList['*.css']
 image_files = FileList['images/*.jpg', 'images/*.png', 'images/*.gif']
@@ -39,7 +40,6 @@ end
 def send_files(file_list)
   file_list.each do |target|
     send_file(target)
-    outputs "Transfered #{target}"
   end
   
 end
@@ -49,6 +49,7 @@ def send_file(target)
       ftp.login(REMOTE_LOGIN, REMOTE_PASSWORD)
       ftp.chdir(REMOTE_PATH)
       ftp.putbinaryfile(target,target)
+      outputs "Transfered #{target}"
     end
 end
 
