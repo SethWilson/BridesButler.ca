@@ -88,6 +88,14 @@
             %dd
               %input{:maxlength=>"30", :name=>"event_date", :class=>"", :value=>"", :tabindex=>"5", :style=>"", :type=>"text"}
             %dt
+              %label.eventtype Type of Event?
+            %dd
+              %select{:name=>"eventtype"}
+                %option{:value=>"Full Wedding"}Full Wedding
+                %option{:value=>"Day of Coordination"} Day of Coordination
+                %option{:value=>"Consultation"} Consultation
+                %option{:value=>"Special Event"} Special Event
+            %dt
               %label.hear Who Referred You?
             %dd
               %select{:name=>"referredfrom"}
