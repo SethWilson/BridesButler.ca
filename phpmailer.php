@@ -11,7 +11,6 @@ if (!empty($_POST)) {
 	$message .= "Event Date: ".$_POST['event_date']."\n";
 	$message .= "Event Type: ".$_POST['eventtype']."\n";
 	$message .= "Who Referred You: ".$_POST['referredfrom']."\n";
-	$message .= "If Other: ".$_POST['other']."\n";
 	
 		mail($to, $subject, $message);
 }
